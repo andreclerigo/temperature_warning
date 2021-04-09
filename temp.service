@@ -1,0 +1,10 @@
+[Unit]
+Description=Temperature Warning
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/temperature_warning/temp.py
+
+[Install]
+WantedBy=multi-user.target
