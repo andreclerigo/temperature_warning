@@ -3,17 +3,19 @@ This project was made when I realised someone covered my Raspberry Pi and it was
 This script will send yourself an email when the device is above 70ºC (this value can be changed on the .py)
 
 ## Usage
+### Setup your email
 Create a `.env` file on the same directory as `script.py`
 ```
 EMAIL="YOUR_EMAIL_HERE"
 PASSWORD="YOUR_PASSWORD_HERE"
 ```
 
-Change `line 7` on `temp.service`  
-`/home/pi/temperature_warning/script.py` to `your_path_to_file/temperature_warning/script.py`  
+### Create a service
+On `line 7` in `temp.service`  
+Change `/home/pi/temperature_warning/script.py` to `your_path_to_file/temperature_warning/script.py`  
 If you aren't sure what's the path to the file go inside the directory that contains the file and do `pwd` on the terminal  
 
-Finally do:
+Now open the terminal on `temperature_warning/` and run  
 ```
 sudo cp temp.service /etc/systemd/system/
 sudo systemctl daemon-reload
