@@ -1,7 +1,7 @@
 # :warning:Temperature Warning Script  
 This project was made when I realised someone covered my Raspberry Pi and it was constantly running at 99ºC  
 This script will send yourself an email when the device is above 70ºC (this value can be changed on the .py)
-
+<br><br>
 ## Usage
 ### Setup your email
 Create a `.env` file on the same directory as `script.py`
@@ -25,7 +25,7 @@ sudo systemctl enable temp.service
 The last command is to make sure that the service is started on system startup
 
 **Note:** Currently this script is done for emails from gmail
-
+<br><br>
 ## Realtime Information
 To get the current temperature on CPU and GPU run the shell script  
 `watch ./pi-temp.sh` to get the information at all time  
