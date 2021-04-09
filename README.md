@@ -25,3 +25,8 @@ sudo systemctl enable temp.service
 The last command is to make sure that the service is started on system startup
 
 **Note:** Currently this script is done for emails from gmail
+
+## Realtime Information
+To get the current temperature on CPU and GPU run the shell script  
+`watch ./pi-temp.sh` to get the information at all time  
+`./pi-temp.sh` to get the temperature once  
