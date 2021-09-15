@@ -11,8 +11,8 @@ PASSWORD="YOUR_PASSWORD_HERE"
 ```
 
 ### Create a service
-On `line 7` in `temp.service`  
-Change `~/github/temperature_warning/temp.py` to `your_path_to_file/temperature_warning/script.py`  
+On `line 8` in `temp.service`  
+Change `~/github/temperature_warning/temp.py` to `your_path_to_file/temp.py`  
 If you aren't sure what's the path to the file go inside the directory that contains the file and do `pwd` on the terminal  
 
 Now open the terminal on `temperature_warning/` and run  
