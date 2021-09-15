@@ -1,10 +1,14 @@
-[Unit]
-Description=Temperature Warning
-After=multi-user.target
+Description=Autostart Temperature Warning on system startup
+
+Wants=network.target
+After=syslog.target network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /home/pi/temperature_warning/temp.py
+ExecStart=su - pi -c "/usr/bin/screen -dmS temp bash -c 'python3 ~/github/temperature_warning/temp.py'"
+Restart=on-failure
+RestartSec=10
+KillMode=process
 
 [Install]
 WantedBy=multi-user.target
