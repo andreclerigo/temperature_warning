@@ -24,7 +24,7 @@ sudo systemctl enable temp.service
 ```
 The last command is to make sure that the service is started on system startup
 
-**Note:** Currently this script is done for emails from gmail
+**Note:** Currently this script is done for emails from gmail and you need to enable less secured apps on your Google account  
 <br><br>
 ## Realtime Information
 To get the current temperature on CPU and GPU run the shell script  
