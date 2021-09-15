@@ -12,7 +12,7 @@ PASSWORD="YOUR_PASSWORD_HERE"
 
 ### Create a service
 On `line 7` in `temp.service`  
-Change `/home/pi/temperature_warning/script.py` to `your_path_to_file/temperature_warning/script.py`  
+Change `~/github/temperature_warning/temp.py` to `your_path_to_file/temperature_warning/script.py`  
 If you aren't sure what's the path to the file go inside the directory that contains the file and do `pwd` on the terminal  
 
 Now open the terminal on `temperature_warning/` and run  
